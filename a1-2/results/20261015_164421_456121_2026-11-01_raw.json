@@ -1,0 +1,215 @@
+{
+  "travel_date": "2026-11-01",
+  "executed_at": "2026-10-15T16:44:12.857593+09:00",
+  "mode": "live",
+  "status": "completed",
+  "llm_provider": "Gemini",
+  "place_provider": "Kakao Local",
+  "model": "gemini-3.1-flash-lite",
+  "recommendation": {
+    "recommended_city": "경주",
+    "weather": "11월 초의 경주는 낮에는 따뜻한 햇살이 비치고 아침저녁으로는 쌀쌀한 전형적인 늦가을 날씨입니다. 단풍이 절정에 달해 여행하기에 가장 쾌적한 기온을 보입니다.",
+    "events": [
+      "경주 동궁과 월지 야경 관람",
+      "불국사 단풍 축제",
+      "경주 핑크뮬리 군락지 산책"
+    ],
+    "reason": "11월 초의 경주는 도시 전체가 붉고 노란 단풍으로 물들어 고즈넉한 분위기를 즐기기에 최적의 장소입니다. 선선한 날씨 덕분에 대릉원이나 첨성대 같은 유적지를 산책하며 걷기에도 매우 좋습니다. 다만, 위 행사들은 매년 열리는 후보일 뿐이며 2026년 실제 개최 여부는 방문 전 반드시 확인이 필요합니다."
+  },
+  "restaurants": [
+    {
+      "name": "용산회식당",
+      "address": "경북 경주시 내남면 포석로 112",
+      "category": "음식점 > 한식 > 해물,생선 > 회",
+      "url": "http://place.map.kakao.com/13718224",
+      "x": 129.20592513022132,
+      "y": 35.75159208939731
+    },
+    {
+      "name": "백년손님",
+      "address": "경북 경주시 첨성로99번길 20",
+      "category": "음식점 > 한식 > 육류,고기 > 불고기,두루치기",
+      "url": "http://place.map.kakao.com/26312724",
+      "x": 129.21278220592941,
+      "y": 35.834979086881425
+    },
+    {
+      "name": "정록쌈밥",
+      "address": "경북 경주시 계림로 48",
+      "category": "음식점 > 한식 > 쌈밥",
+      "url": "http://place.map.kakao.com/9935399",
+      "x": 129.2140742142922,
+      "y": 35.83862613742365
+    },
+    {
+      "name": "남정부일기사식당",
+      "address": "경북 경주시 배리1길 3",
+      "category": "음식점 > 기사식당",
+      "url": "http://place.map.kakao.com/11992908",
+      "x": 129.20581928734194,
+      "y": 35.79082055834128
+    },
+    {
+      "name": "맷돌순두부",
+      "address": "경북 경주시 북군길 7",
+      "category": "음식점 > 한식 > 두부전문점",
+      "url": "http://place.map.kakao.com/10341223",
+      "x": 129.262849554884,
+      "y": 35.851776927027
+    }
+  ],
+  "errors": [],
+  "provider_responses": {
+    "recommendation": [
+      {
+        "candidates": [
+          {
+            "content": {
+              "parts": [
+                {
+                  "text": "{\n  \"recommended_city\": \"경주\",\n  \"weather\": \"11월 초의 경주는 낮에는 따뜻한 햇살이 비치고 아침저녁으로는 쌀쌀한 전형적인 늦가을 날씨입니다. 단풍이 절정에 달해 여행하기에 가장 쾌적한 기온을 보입니다.\",\n  \"events\": [\n    \"경주 동궁과 월지 야경 관람\",\n    \"불국사 단풍 축제\",\n    \"경주 핑크뮬리 군락지 산책\"\n  ],\n  \"reason\": \"11월 초의 경주는 도시 전체가 붉고 노란 단풍으로 물들어 고즈넉한 분위기를 즐기기에 최적의 장소입니다. 선선한 날씨 덕분에 대릉원이나 첨성대 같은 유적지를 산책하며 걷기에도 매우 좋습니다. 다만, 위 행사들은 매년 열리는 후보일 뿐이며 2026년 실제 개최 여부는 방문 전 반드시 확인이 필요합니다.\"\n}",
+                  "thoughtSignature": "ErUECrIEAWkUfRMiMaYBsh1qi/Da9vNIWjiJ21lsRaTKeCre+3UFMkQOOKyZATLKAfdVH7PaURYnIapgKHeyfyRMaDvgD8dK8JOObO3eQaUl1ruGcjzlydAUWE4q3ODlroI3v8nqjx6N6hYMQQH906kXZUO0ulfWtusL348W32kRhYa4uxY2kUGLVZLXJ2RTkcpUAz8BFc3DZx+EDV2dCnYcaoeC0pZh1BUvJtfRUsj3xIneereE7CZfz+PHj2lNXogrid9tXBrkJM9H2dY/1xo5dJAhRIc0amVgMG8iw4SXRnvneRH8bIvreGsuTB4iQ7p9rvaxG6ux7GlMh1e6sse83JS6Hmf6Y3Io/3FtvXyt9W+1kvidVyCI3RqNVs1HHNsrobTHZW3L5M6sphfqJoZhEgf63TZGDGNbeB6vRX8bqEyk/iYwj4DKMMOBojUjGvPK6mcp0W/9OTKyaLVPtL6FJyMAAEdR+UACPd9T0fzFDtNlANGJkY55CFYiAMifmk29N5BG5z1PnYTWz7sgs20W3asb3VQObClF6n9aylXM2qW2ew2I0QMRVOh6uiykE+ULFwuH2+Ha0Prdv5RvDcrD5rhpLEflbYjnG4JeWaRORPG10ihRmUYPdVgNSZz3F7+vi8QsgtZ50a4lDJia4orETJpXYB5Ra30a++5nV/goD6oCFhrzz0WcGkQHkJWqzgHEqVC8IxXYIackDLWWx79iRiIHcZfthcviJSO0CTYFLIk5Kj9Bbg=="
+                }
+              ],
+              "role": "model"
+            },
+            "finishReason": "STOP",
+            "index": 0
+          }
+        ],
+        "usageMetadata": {
+          "promptTokenCount": 125,
+          "candidatesTokenCount": 230,
+          "totalTokenCount": 478,
+          "promptTokensDetails": [
+            {
+              "modality": "TEXT",
+              "tokenCount": 125
+            }
+          ],
+          "thoughtsTokenCount": 123,
+          "serviceTier": "standard"
+        },
+        "modelVersion": "gemini-3.1-flash-lite",
+        "responseId": "TYTQarqCDbyw2roPwfPr-QU"
+      }
+    ],
+    "place_search": {
+      "documents": [
+        {
+          "address_name": "경북 경주시 내남면 이조리 611",
+          "category_group_code": "FD6",
+          "category_group_name": "음식점",
+          "category_name": "음식점 > 한식 > 해물,생선 > 회",
+          "distance": "",
+          "id": "13718224",
+          "phone": "054-748-2119",
+          "place_name": "용산회식당",
+          "place_url": "http://place.map.kakao.com/13718224",
+          "road_address_name": "경북 경주시 내남면 포석로 112",
+          "x": "129.20592513022132",
+          "y": "35.75159208939731"
+        },
+        {
+          "address_name": "경북 경주시 황남동 223-1",
+          "category_group_code": "FD6",
+          "category_group_name": "음식점",
+          "category_name": "음식점 > 한식 > 육류,고기 > 불고기,두루치기",
+          "distance": "",
+          "id": "26312724",
+          "phone": "0503-7152-0634",
+          "place_name": "백년손님",
+          "place_url": "http://place.map.kakao.com/26312724",
+          "road_address_name": "경북 경주시 첨성로99번길 20",
+          "x": "129.21278220592941",
+          "y": "35.834979086881425"
+        },
+        {
+          "address_name": "경북 경주시 황남동 27-3",
+          "category_group_code": "FD6",
+          "category_group_name": "음식점",
+          "category_name": "음식점 > 한식 > 쌈밥",
+          "distance": "",
+          "id": "9935399",
+          "phone": "054-772-9333",
+          "place_name": "정록쌈밥",
+          "place_url": "http://place.map.kakao.com/9935399",
+          "road_address_name": "경북 경주시 계림로 48",
+          "x": "129.2140742142922",
+          "y": "35.83862613742365"
+        },
+        {
+          "address_name": "경북 경주시 배동 948-3",
+          "category_group_code": "FD6",
+          "category_group_name": "음식점",
+          "category_name": "음식점 > 기사식당",
+          "distance": "",
+          "id": "11992908",
+          "phone": "054-745-9729",
+          "place_name": "남정부일기사식당",
+          "place_url": "http://place.map.kakao.com/11992908",
+          "road_address_name": "경북 경주시 배리1길 3",
+          "x": "129.20581928734194",
+          "y": "35.79082055834128"
+        },
+        {
+          "address_name": "경북 경주시 북군동 229-1",
+          "category_group_code": "FD6",
+          "category_group_name": "음식점",
+          "category_name": "음식점 > 한식 > 두부전문점",
+          "distance": "",
+          "id": "10341223",
+          "phone": "054-745-2791",
+          "place_name": "맷돌순두부",
+          "place_url": "http://place.map.kakao.com/10341223",
+          "road_address_name": "경북 경주시 북군길 7",
+          "x": "129.262849554884",
+          "y": "35.851776927027"
+        }
+      ],
+      "meta": {
+        "is_end": false,
+        "pageable_count": 45,
+        "same_name": {
+          "keyword": "맛집",
+          "region": [],
+          "selected_region": "경북 경주시"
+        },
+        "total_count": 5133
+      }
+    },
+    "report": {
+      "candidates": [
+        {
+          "content": {
+            "parts": [
+              {
+                "text": "## 추천 지역\n\n이번 여행지로 추천하는 곳은 경상북도 경주입니다.\n\n## 추천 이유\n\n11월 초의 경주는 도시 전체가 붉고 노란 단풍으로 아름답게 물들어 고즈넉한 분위기를 즐기기에 가장 좋은 시기입니다. 선선한 가을 날씨 덕분에 대릉원이나 첨성대와 같은 주요 유적지를 여유롭게 산책하며 걷기에도 매우 쾌적합니다. 역사적인 유적지와 자연의 아름다움이 어우러진 경주는 가을 여행의 정취를 느끼기에 최적의 장소입니다.\n\n## 날씨 요약\n\n11월 초 경주의 날씨는 낮에는 따뜻한 햇살이 비치고, 아침과 저녁으로는 다소 쌀쌀한 전형적인 늦가을 날씨를 보입니다. 단풍이 절정에 달하는 시기인 만큼 여행하기에 가장 쾌적한 기온을 유지합니다. 다만 일교차가 있을 수 있으니 얇은 겉옷을 챙기는 것이 좋습니다.\n\n## 행사 / 축제\n\n경주 방문 시 즐길 수 있는 행사 후보는 다음과 같습니다. 다만, 아래 행사들은 매년 열리는 후보일 뿐이며 2026년 실제 개최 여부는 방문 전 반드시 확인이 필요합니다.\n\n- 경주 동궁과 월지 야경 관람\n- 불국사 단풍 축제\n- 경주 핑크뮬리 군락지 산책\n\n## 맛집 추천\n\n- 용산회식당\n  - 주소: 경북 경주시 내남면 포석로 112\n  - 분류: 음식점 > 한식 > 해물,생선 > 회\n  - URL: http://place.map.kakao.com/13718224\n\n- 백년손님\n  - 주소: 경북 경주시 첨성로99번길 20\n  - 분류: 음식점 > 한식 > 육류,고기 > 불고기,두루치기\n  - URL: http://place.map.kakao.com/26312724\n\n- 정록쌈밥\n  - 주소: 경북 경주시 계림로 48\n  - 분류: 음식점 > 한식 > 쌈밥\n  - URL: http://place.map.kakao.com/9935399\n\n- 남정부일기사식당\n  - 주소: 경북 경주시 배리1길 3\n  - 분류: 음식점 > 기사식당\n  - URL: http://place.map.kakao.com/11992908\n\n- 맷돌순두부\n  - 주소: 경북 경주시 북군길 7\n  - 분류: 음식점 > 한식 > 두부전문점\n  - URL: http://place.map.kakao.com/10341223\n\n## 1일 일정 제안\n\n- 오전: 경주의 상징인 대릉원과 첨성대 주변을 산책하며 늦가을의 정취를 느껴보세요. 산책 후에는 맷돌순두부에서 따뜻한 순두부 요리로 아침 식사를 즐기는 것을 추천합니다.\n- 오후: 불국사 단풍 축제나 경주 핑크뮬리 군락지를 방문하여 붉게 물든 가을 풍경을 감상하세요. 점심 식사로는 정록쌈밥이나 백년손님에서 든든한 한식을 맛보며 에너지를 충전하는 시간을 가지면 좋습니다.\n- 저녁: 경주 동궁과 월지로 이동하여 아름다운 야경을 감상하며 하루를 마무리하세요. 저녁 식사로는 용산회식당이나 남정부일기사식당에서 경주만의 특별한 맛을 경험해 보시길 바랍니다.",
+                "thoughtSignature": "ErQECrEEAWkUfRMESvsmpceF8vJokMc81NRWHTG7AXzhPg/vY0QpTT//ILm1r0GJxsH2DKCTSUB79l2zj6mE9yLPDmnxGT+hHBqAvQJENORa4Mx6ySER7oqbYnEhjPjM4bcHCh1WWp6oZPAnEome41PfsQ/qFkzAPvLWJ74rvXHA13yRY8oDgeiZUrdy8LFBKXoIWtegDPzaoUVsNFJVjm7qnvnnarhCGgg2Bs8+mIKHlMruFqANNFVwviL74Bh3mwrLNQjZLK/E952A2/TO1+OQbwb5TOaqvaun1DB91KxKsj2BIWcFpLysNFVJlpR5O9XrDZq2fAMDbxyi/BwK+cz8vI0IrT8v8Wt4J2VZjaiNxlRGJjw0jUFuERpooroYEg6tCvWKAhhgBTjROnbja31PG5ciGsgX6SQuhnqshCsGbVIVZE9Q7oI6rSL4ZX539PL2ndJ/W9+KGOtNr+Papia4l4b0rTUjx0UcVlZ0PnI4YgaQ8PHgTWTUhzu1U7Py2PxitIYcve1lMVTWxn/2SD0EaUs2MHRGKSPYx3iditvfskvSVEqXo2AAeZ4xiDIT3TFV72yLH+/mUs52Ja1zSiK01tm+pnkt1WG0Ag7JldCY1TJTvFZ9gHUkcKLzcVY1CQHSlkdfJ0AXQ21sB/7XeZ19KlQRevX4uIgo4EnnPOdoaWru4gjGPpNd6Me57hs+e0O1Ly6J5TjDsbpLc4KaCFkXRbWgGlS9cnAxwKG11kym0MpJVhgT"
+              }
+            ],
+            "role": "model"
+          },
+          "finishReason": "STOP",
+          "index": 0
+        }
+      ],
+      "usageMetadata": {
+        "promptTokenCount": 1031,
+        "candidatesTokenCount": 853,
+        "totalTokenCount": 2002,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1031
+          }
+        ],
+        "thoughtsTokenCount": 118,
+        "serviceTier": "standard"
+      },
+      "modelVersion": "gemini-3.1-flash-lite",
+      "responseId": "UITQapqQEpbZ9tMPxZn36A8"
+    }
+  },
+  "report_source": "gemini"
+}

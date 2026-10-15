@@ -1,0 +1,39 @@
+{
+  "tested_at": "2026-10-15T19:35:27.732405+09:00",
+  "base_url": "https://gongbu-hanip.vercel.app",
+  "unauthenticated": true,
+  "checks": [
+    {
+      "path": "/",
+      "status": 200,
+      "type": "text/html; charset=utf-8",
+      "security_header": "nosniff"
+    },
+    {
+      "path": "/css/style.css",
+      "status": 200,
+      "type": "text/css; charset=utf-8",
+      "security_header": "nosniff"
+    },
+    {
+      "path": "/js/app.js",
+      "status": 200,
+      "type": "application/javascript; charset=utf-8",
+      "security_header": "nosniff"
+    },
+    {
+      "path": "/.env",
+      "status": 404
+    },
+    {
+      "path": "/api/learn",
+      "status": 405
+    }
+  ],
+  "empty_input": {
+    "status": 400,
+    "response": {
+      "error": "궁금한 내용을 2~500자로 적어 주세요."
+    }
+  }
+}

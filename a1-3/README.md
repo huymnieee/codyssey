@@ -5,9 +5,9 @@
 **처음이라면 [쉬운 과제 설명과 내가 할 일](docs/처음읽기.md)을 먼저 읽으세요.**
 
 - GitHub: [huymnieee/codyssey/a1-3](https://github.com/huymnieee/codyssey/tree/main/a1-3)
-- **Vercel 배포 URL: 아직 없음. 본인 Vercel 계정 연결/배포 및 공개 환경 검증이 남아 있습니다.**
+- **공개 서비스: [공부한입](https://gongbu-hanip.vercel.app)**
 - 로컬 미리보기: `http://127.0.0.1:8003` (이 컴퓨터에서 서버 실행 중일 때만 접속 가능)
-- 이 자료는 코드와 문서 준비본입니다. 공개 배포 전에는 필수 과제가 모두 끝난 상태가 아닙니다.
+- 2026-10-15 공개 배포 완료. 로그인 없는 접속, 실제 Gemini 답변, 300자 질문, 메뉴 이동, 모바일 화면, 학습 노트 다운로드를 확인했습니다. 본인의 사용·이해 확인과 학원 제출은 직접 진행합니다.
 
 ## 기능과 기술
 
@@ -89,13 +89,13 @@ python3 -m unittest discover -s tests -v
 
 | 필수 제출물 | 위치 / 현재 처리 |
 | --- | --- |
-| 실제 Vercel URL | 계정 연결 후 배포 필요 |
+| 실제 Vercel URL | https://gongbu-hanip.vercel.app |
 | GitHub 코드 | 이 a1-3 폴더 |
-| README | 이 문서. 배포 후 URL 갱신 필요 |
+| README | 이 문서. 실제 배포 URL과 실행/설정 방법 포함 |
 | 서비스 기획서 | [기획서](docs/서비스기획서.md) |
-| 화면 증빙과 AI 사용 과정 | [증빙 안내](evidence/검증기록.md), [AI 사용 요약](evidence/AI사용기록.md), [실제 대화 발췌](evidence/대화발췌.md). 공개 배포 증빙 추가 필요 |
+| 화면 증빙과 AI 사용 과정 | [공개 환경 검증과 증빙](evidence/검증기록.md), [AI 사용 요약](evidence/AI사용기록.md), [실제 대화 발췌](evidence/대화발췌.md) |
 
-추가로 [제출 전 체크리스트](docs/제출체크리스트.md)를 확인합니다. 학원 최종 제출과 본인의 학습 확인은 직접 진행해야 합니다.
+추가로 [제출 전 체크리스트](docs/제출체크리스트.md)를 확인합니다. [제출 ZIP](output/a1-3_submission.zip)에도 코드·문서·공개 배포 증빙을 담았습니다. 실제 키는 포함하지 않습니다. 학원 최종 제출과 본인의 학습 확인은 직접 진행해야 합니다.
 
 ## 공식 참고
 

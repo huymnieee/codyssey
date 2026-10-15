@@ -1,0 +1,28 @@
+{
+  "tested_at": "2026-10-15T17:15:08.401656+09:00",
+  "location": "local",
+  "http_status": 200,
+  "input_length": 300,
+  "test_input": {
+    "topic": "저는 프로그래밍을 처음 배우는 학원 수강생입니다. 웹사이트에서 HTML, CSS, JavaScript, Python이 서로 어떤 역할을 하는지 쉬운 말로 이해하고 싶어요. 웹사이트에서 HTML, CSS, JavaScript, Python이 서로 어떤 역할을 하는지 쉬운 말로 이해하고 싶어요. 웹사이트에서 HTML, CSS, JavaScript, Python이 서로 어떤 역할을 하는지 쉬운 말로 이해하고 싶어요. 웹사이트에서 HTML, CSS, JavaScript, Python이 서로 어떤 역할을 하는지 쉬운 말로 이해하고 싶어요. ",
+    "level": "first"
+  },
+  "result": {
+    "title": "웹사이트를 만드는 네 가지 친구들",
+    "summary": "웹사이트의 뼈대와 디자인, 움직임 그리고 서버에서의 처리를 담당하는 기술들을 알아봅니다.",
+    "explanation": "HTML은 웹사이트의 뼈대를 만드는 언어로 제목이나 글자를 배치합니다. CSS는 웹사이트의 겉모습을 꾸미는 도구로 글자 색깔이나 배경을 예쁘게 바꿔줍니다. JavaScript는 웹사이트에 생명을 불어넣어 버튼을 누를 때 반응하게 하거나 움직이는 화면을 만듭니다. Python은 사용자가 보지 못하는 웹사이트 뒷면에서 데이터를 정리하거나 계산하는 역할을 합니다. 보통 웹사이트는 HTML, CSS, JavaScript가 한 팀이 되어 화면을 만들고 Python 같은 언어가 보이지 않는 곳에서 돕습니다.",
+    "analogy": "사람의 몸에 비유하면 HTML은 뼈대, CSS는 입고 있는 옷, JavaScript는 표정과 행동이며, Python은 그 사람이 집에 돌아와서 하는 복잡한 계산이나 가계부 정리와 같습니다.",
+    "points": [
+      "HTML은 웹사이트의 기본 내용을 담는 뼈대입니다",
+      "CSS는 색깔과 모양을 입혀 예쁘게 꾸며줍니다",
+      "JavaScript와 Python은 각각 화면의 움직임과 서버의 복잡한 계산을 담당합니다"
+    ],
+    "quiz": {
+      "question": "웹사이트의 겉모습을 예쁘게 꾸며주고 색깔을 입히는 역할을 하는 것은 무엇일까요?",
+      "answer": "CSS입니다. CSS는 글자의 크기나 색상 등 디자인을 결정하는 역할을 합니다."
+    }
+  },
+  "model": "gemini-3.1-flash-lite",
+  "source": "gemini",
+  "mode": "live"
+}

@@ -1,0 +1,13 @@
+.env
+.env.*
+.git
+.repo
+.work
+.venv
+__pycache__
+tests
+docs
+evidence
+output
+dev_server.py
+*.command

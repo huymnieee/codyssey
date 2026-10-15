@@ -1,0 +1,1 @@
+# 외부 패키지 없음. Python 표준 라이브러리 urllib/http/json을 사용합니다.

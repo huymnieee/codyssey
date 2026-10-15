@@ -2,11 +2,24 @@
 
 여행 날짜를 입력하면 Gemini가 국내 도시를 추천하고, Kakao Local에서 맛집을 최대 5곳 검색한 뒤, Gemini가 여행 보고서를 작성하는 Python 프로그램입니다.
 
-**처음이라면 `처음읽기.md`부터 읽으세요.** 현재 포함된 예제는 가상 데이터를 쓰는 데모입니다. 실제 API 실행 증빙은 본인 API 키를 설정한 후 만들어야 합니다.
+**동료평가 준비라면 [쉬운 설명과 예상 질문](동료평가_설명.md)을 먼저 읽으세요.** 처음 실행하는 분은 [처음읽기](처음읽기.md)를 참고하세요. `results/`에는 실제 API 실행 결과가 있고, `examples/`는 별도의 가상 연습 데이터입니다.
 
 Mac에서는 `여행추천_시작.command`를 더블클릭하면 연습 실행, 실제 실행과 제출 ZIP 생성, 키 설정을 메뉴에서 선택할 수 있습니다.
 
-검증 상태 (2026-10-15): 자동 점검 13개 통과, 본인 키를 이용한 Gemini 추천 → Kakao 맛집 검색 → Gemini 최종 보고서의 실제 실행 완료. `2026-11-01` 여행 날짜로 경주 추천과 맛집 5곳을 포함한 JSON/Markdown을 생성했습니다. 완료 결과는 `mode=live`, `status=completed`, `report_source=gemini`이며 오류 목록은 비어 있습니다. 교육기관 사이트에서의 최종 제출은 별도입니다.
+검증 상태 (2026-10-15): 자동 점검 16개 통과. 저장된 실제 실행은 Gemini 추천 → Kakao 맛집 검색 → Gemini 최종 보고서를 완료했습니다. `2026-11-01` 여행 날짜로 경주 추천과 맛집 5곳을 포함한 JSON/Markdown을 생성했습니다. 완료 결과는 `mode=live`, `status=completed`, `report_source=gemini`이며 오류 목록은 비어 있습니다. [필수 요구사항 대조와 확인 근거](평가체크리스트.md)를 함께 확인할 수 있습니다. 교육기관 사이트에서의 최종 제출은 별도입니다.
+
+## 평가자가 빠르게 확인할 내용
+
+```text
+날짜 입력 → Gemini 추천 JSON → 도시 이름 추출 → Kakao 맛집 검색
+          → 추천 + 맛집을 Gemini에 전달 → Markdown 보고서 + 원본 JSON 저장
+```
+
+- 첫 번째 AI 호출은 여행지 추천, 두 번째 AI 호출은 추천과 장소 데이터를 합친 보고서 작성입니다.
+- 맛집은 카카오 응답에서 가져옵니다. 검색 실패/0건은 "데이터 없음"으로 처리하고 보고서는 계속 생성합니다.
+- 추천 JSON의 필수 키/타입이 틀리면 한 번만 다시 요청합니다.
+- 최종 보고서는 제목뿐 아니라 각 섹션의 내용과 제공된 식당 이름/주소/분류/URL, 오전/오후/저녁 일정도 검사합니다.
+- 코드 구현과 설명서 작성/점검에는 AI 도구의 도움을 받았습니다. 동작과 한계는 실제 파일을 근거로 설명합니다.
 
 ## GitHub에서 확인하고 실행하기
 
@@ -35,10 +48,9 @@ python3 travel_planner.py --date "2026-11-01" --demo
 
 ## 2. 먼저 연습 실행
 
-macOS 터미널에서 프로젝트 폴더로 이동한 후 실행합니다.
+다운로드/복제한 프로젝트의 `a1-2` 폴더에서 실행합니다. `git clone`을 이용했다면 위의 `cd codyssey/a1-2`로 이동합니다.
 
 ```bash
-cd /Users/hmhm/Downloads/a1-2
 python3 travel_planner.py --date "2026-10-20" --demo
 ```
 
@@ -124,7 +136,7 @@ JSON에서 `mode: "live"`, `status: "completed"`, `report_source: "gemini"`인�
 | Gemini 추천 JSON 파싱/스키마 오류 | 수정 지시 후 최대 1회 재요청, 재실패하면 오류 JSON 저장 후 종료 |
 | 지도 인증/한도/네트워크/응답 오류 | `errors` 기록, 빈 맛집 목록으로 보고서 생성 계속 |
 | 지도 결과 0건 | `EMPTY_RESULT` 기록, 보고서에 "데이터 없음" |
-| 최종 AI 보고서 생성 실패/필수 항목 누락 | 임시 보고서와 JSON 저장, 미완료 표시 및 종료 코드 1. 재실행 필요 |
+| 최종 AI 보고서 생성 실패/필수 내용 누락 | 임시 보고서와 JSON 저장, 미완료 표시 및 종료 코드 1. 재실행 필요. 제출 ZIP에서도 제외 |
 | 401/403 | 키 종류, 키 값, 서비스 사용 권한, 카카오맵 ON 여부 확인 |
 | 429 | 사용량/요청 한도 확인 후 나중에 재실행 |
 | 404 | `GEMINI_MODEL`과 계정에서 사용할 수 있는 모델 확인 |
@@ -155,7 +167,7 @@ GitHub를 이용한다면 과제용 폴더에 같은 파일을 올리세요. 다
 
 ## 9. 코드 설명과 점검
 
-`recommend()`가 1차 JSON을 만들고 타입을 검증합니다. `search_restaurants()`는 그 JSON의 `recommended_city`로 Kakao에 GET 요청을 보냅니다. `make_report()`는 추천 JSON과 맛집 목록을 Gemini에 POST로 보내 Markdown 보고서를 만듭니다. `save_results()`는 오류 목록과 결과를 파일에 기록합니다.
+`recommend()`가 1차 JSON을 만들고 타입을 검증합니다. `search_restaurants()`는 그 JSON의 `recommended_city`로 Kakao에 GET 요청을 보냅니다. `make_report()`는 추천 JSON과 맛집 목록을 Gemini에 POST로 보내 Markdown 보고서를 만듭니다. `valid_report()`는 필수 섹션의 내용과 식당 정보, 하루 일정을 검사하며 제출 ZIP에서도 같은 검사를 사용합니다. `save_results()`는 오류 목록과 결과를 파일에 기록합니다.
 
 ```bash
 python3 -m unittest discover -s tests -v

@@ -147,6 +147,28 @@ class PipelineTest(unittest.TestCase):
                     self.assertNotIn(secret, path.read_text())
             json.loads(next(Path(tmp).glob("*.json")).read_text())
 
+    def test_report_rejects_headings_without_content(self):
+        empty = "\n\n".join(f"## {heading}" for heading in app.HEADINGS)
+        self.assertFalse(app.valid_report(empty, REC, []))
+        valid = app.template_report("2026-11-01", REC, [])
+        self.assertTrue(app.valid_report(valid, REC, []))
+        # 본문에 제목을 단순히 언급하는 것만으로는 필수 섹션으로 인정하지 않습니다.
+        self.assertFalse(app.valid_report(valid.replace("## 날씨 요약", "날씨 요약"), REC, []))
+
+    def test_report_requires_provided_place_url_and_category(self):
+        places = [{"name": "검증 식당", "address": "검증 주소", "category": "한식 > 두부",
+                   "url": "https://place.map.kakao.com/123"}]
+        valid = app.template_report("2026-11-01", REC, places)
+        self.assertTrue(app.valid_report(valid, REC, places))
+        for field in ("name", "address", "category", "url"):
+            self.assertFalse(app.valid_report(valid.replace(places[0][field], "누락"), REC, places))
+
+    def test_report_checks_content_in_the_correct_section(self):
+        valid = app.template_report("2026-11-01", REC, [])
+        # 일정이 다른 섹션에만 있거나, 지역이 추천 이유에만 있으면 검증 실패입니다.
+        self.assertFalse(app.valid_report(valid.replace("## 1일 일정 제안", "## 다른 내용"), REC, []))
+        self.assertFalse(app.valid_report(valid.replace("## 추천 지역\n강릉", "## 추천 지역\n도시 누락"), REC, []))
+
 
 if __name__ == "__main__":
     unittest.main()

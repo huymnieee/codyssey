@@ -246,14 +246,35 @@ def make_report(travel_date, recommendation, restaurants, errors, provider_respo
     )
     text, response = gemini_text(prompt)
     provider_responses["report"] = response
-    required = [f"## {heading}" for heading in HEADINGS]
-    if (any(heading not in text for heading in required)
-            or recommendation["recommended_city"] not in text
-            or any(p["name"] not in text or p["address"] not in text for p in restaurants)
-            or (not restaurants and "데이터 없음" not in text)
-            or any(period not in text for period in ("오전", "오후", "저녁"))):
+    if not valid_report(text, recommendation, restaurants):
         raise APIError("REPORT_FORMAT_ERROR", "AI 보고서에서 필수 항목 일부가 빠졌습니다.")
     return text
+
+
+def valid_report(text, recommendation, restaurants):
+    """제목만 있고 내용이 없거나, 식당의 주소/링크가 빠진 보고서는 완료로 보지 않습니다."""
+    sections = {}
+    for heading in HEADINGS:
+        match = re.search(rf"(?m)^##[ \t]+{re.escape(heading)}[ \t]*$", text)
+        if match is None:
+            return False
+        remainder = text[match.end():]
+        next_heading = re.search(r"(?m)^#{1,2}[ \t]+", remainder)
+        body = remainder[:next_heading.start()] if next_heading else remainder
+        if not body.strip():
+            return False
+        sections[heading] = body
+    if recommendation["recommended_city"] not in sections["추천 지역"]:
+        return False
+    places = sections["맛집 추천"]
+    for place in restaurants:
+        # API가 제공한 분류/URL도 해당 식당 섹션에서 확인할 수 있어야 합니다.
+        for key in ("name", "address", "category", "url"):
+            if place.get(key) and place[key] not in places:
+                return False
+    if not restaurants and "데이터 없음" not in places:
+        return False
+    return all(period in sections["1일 일정 제안"] for period in ("오전", "오후", "저녁"))
 
 
 def finish_report(text, errors, mode, fallback=False):

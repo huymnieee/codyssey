@@ -6,12 +6,13 @@ import json
 from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile
 
-from travel_planner import HEADINGS, ROOT, clean_secrets, load_env, parse_recommendation
+from travel_planner import ROOT, clean_secrets, load_env, parse_recommendation, valid_report
 
 SOURCE_FILES = [
     "travel_planner.py", "setup_keys.py", "package_submission.py", "README.md",
     "처음읽기.md", "여행추천_시작.command", "requirements.txt", ".env.example", ".gitignore",
     "examples/demo_fixture.json", "tests/test_pipeline.py",
+    "동료평가_설명.md", "평가체크리스트.md",
 ]
 
 
@@ -29,7 +30,7 @@ def completed_run(results):
                 continue
             report = raw.with_name(raw.name.replace("_raw.json", "_travel_plan.md"))
             text = report.read_text(encoding="utf-8")
-            if any(f"## {heading}" not in text for heading in HEADINGS):
+            if not valid_report(text, data["recommendation"], data["restaurants"]):
                 continue
             return raw, report
         except (OSError, ValueError, KeyError, TypeError, AttributeError):

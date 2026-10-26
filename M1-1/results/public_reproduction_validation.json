@@ -1,0 +1,22 @@
+{
+  "checked_at_kst": "2026-10-27T05:34:27+09:00",
+  "passed": true,
+  "command": ".venv/bin/python src/reproduce.py --collect",
+  "project_copy": "public candidate without raw/source/processed or selected KRX close inputs",
+  "environment": "existing Python 3.12.14 environment with requirements installed",
+  "freshly_fetched": [
+    "NAVER daily snapshots",
+    "Yahoo daily snapshots"
+  ],
+  "reused_download_cache": "pinned KRX annual parquet files, each Git blob hash rechecked",
+  "generated_analysis_rows_per_series": 913,
+  "result_tables_identical_to_report_inputs": [
+    "analysis_metrics.json",
+    "summary_metrics.csv",
+    "annual_returns.csv",
+    "monthly_returns.csv",
+    "indexed_prices.csv"
+  ],
+  "raw_csv_content_identical": true,
+  "public_data_policy": "omit original snapshots, raw/processed full daily prices and indexed daily series; include source methods and summary/comparison results"
+}

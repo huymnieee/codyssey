@@ -1,0 +1,22 @@
+{
+  "checked_on": "2026-10-27",
+  "description": "XKRX library calendar omissions confirmed against market-operation notices, not inferred only from price-data gaps.",
+  "additional_closures": [
+    {
+      "date": "2026-06-03",
+      "reason": "지방선거일 휴장",
+      "sources": [
+        "https://strn.krx.co.kr/corebbs5/BHPSTRN0401/list",
+        "https://invest.kiwoom.com/inv/calendar?date=20260628"
+      ]
+    },
+    {
+      "date": "2026-07-17",
+      "reason": "제헌절 휴장",
+      "sources": [
+        "https://strn.krx.co.kr/corebbs5/BHPSTRN0401/list",
+        "https://securities.miraeasset.com/bbs/board/message/view.do?categoryId=1539&messageId=2340801"
+      ]
+    }
+  ]
+}

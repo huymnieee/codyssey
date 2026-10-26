@@ -1,0 +1,107 @@
+{
+  "analysis_start": "2023-01-01",
+  "analysis_end": "2026-09-30",
+  "preparation_start": "2022-07-01",
+  "columns": [
+    "Date",
+    "Open",
+    "High",
+    "Low",
+    "Close",
+    "Volume"
+  ],
+  "price_basis": "NAVER supplied OHLC values; no further price adjustment or dividend reinvestment applied by this script. Source XML does not label adjustment policy; this must be confirmed before final return interpretation.",
+  "index_basis": "Published KOSPI index series obtained through NAVER; not a locally reconstructed index.",
+  "volume_basis": "Provider values retained; index volume unit unverified, excluded from planned analysis.",
+  "collection_check": {
+    "same_analysis_dates_for_all_series": true,
+    "analysis_union_dates": 913,
+    "note": "Only collection coverage is checked here; independent trading-calendar and price-quality checks belong to step 3."
+  },
+  "series": [
+    {
+      "key": "samsung",
+      "symbol": "005930",
+      "name": "삼성전자",
+      "price_unit": "KRW",
+      "provider": "NAVER Finance",
+      "source_url": "https://fchart.stock.naver.com/sise.nhn?timeframe=day&count=1600&requestType=0&symbol=005930",
+      "fetched_at_kst": "2026-10-26T22:52:09+09:00",
+      "source_snapshot": "data/source/naver_samsung.xml",
+      "source_sha256": "4198e2c97a53ddc7776ceb500168057c0f94c1c6d0dfe9042b7749d5e03b03d3",
+      "source_rows": 1600,
+      "csv": "data/raw/samsung_daily.csv",
+      "csv_sha256": "0b2932dc12945846489851f30282ef9e8548af3e82427cc1109289c3e4c9770c",
+      "saved_rows": 1038,
+      "saved_first_date": "2022-07-01",
+      "saved_last_date": "2026-09-30",
+      "preparation_rows": 125,
+      "analysis_rows": 913,
+      "analysis_first_date": "2023-01-02",
+      "analysis_last_date": "2026-09-30",
+      "analysis_rows_by_year": {
+        "2023": 245,
+        "2024": 244,
+        "2025": 242,
+        "2026": 182
+      },
+      "missing_dates_vs_other_series": []
+    },
+    {
+      "key": "sk_hynix",
+      "symbol": "000660",
+      "name": "SK하이닉스",
+      "price_unit": "KRW",
+      "provider": "NAVER Finance",
+      "source_url": "https://fchart.stock.naver.com/sise.nhn?timeframe=day&count=1600&requestType=0&symbol=000660",
+      "fetched_at_kst": "2026-10-26T22:52:09+09:00",
+      "source_snapshot": "data/source/naver_sk_hynix.xml",
+      "source_sha256": "94a3dd2106cd34adbd8f3298063e2f6d4d1dd47773e25340c65146dcf2f35642",
+      "source_rows": 1600,
+      "csv": "data/raw/sk_hynix_daily.csv",
+      "csv_sha256": "3f34da5a8a87088bccc0ac24adf8ce54c69b4cef678caceefa5ed3085c6574e4",
+      "saved_rows": 1038,
+      "saved_first_date": "2022-07-01",
+      "saved_last_date": "2026-09-30",
+      "preparation_rows": 125,
+      "analysis_rows": 913,
+      "analysis_first_date": "2023-01-02",
+      "analysis_last_date": "2026-09-30",
+      "analysis_rows_by_year": {
+        "2023": 245,
+        "2024": 244,
+        "2025": 242,
+        "2026": 182
+      },
+      "missing_dates_vs_other_series": []
+    },
+    {
+      "key": "kospi",
+      "symbol": "KOSPI",
+      "name": "코스피",
+      "price_unit": "points",
+      "provider": "NAVER Finance",
+      "source_url": "https://fchart.stock.naver.com/sise.nhn?timeframe=day&count=1600&requestType=0&symbol=KOSPI",
+      "fetched_at_kst": "2026-10-26T22:52:09+09:00",
+      "source_snapshot": "data/source/naver_kospi.xml",
+      "source_sha256": "bf196379f6f07f71824f6a411b260969da0be2a3ffb646a4db25fa2f6a7847d1",
+      "source_rows": 1600,
+      "csv": "data/raw/kospi_daily.csv",
+      "csv_sha256": "bcb894c7e447aa89c61eefaf6f506026430f7bb715a7b78625be6e39b0e4b551",
+      "saved_rows": 1038,
+      "saved_first_date": "2022-07-01",
+      "saved_last_date": "2026-09-30",
+      "preparation_rows": 125,
+      "analysis_rows": 913,
+      "analysis_first_date": "2023-01-02",
+      "analysis_last_date": "2026-09-30",
+      "analysis_rows_by_year": {
+        "2023": 245,
+        "2024": 244,
+        "2025": 242,
+        "2026": 182
+      },
+      "missing_dates_vs_other_series": []
+    }
+  ]
+}

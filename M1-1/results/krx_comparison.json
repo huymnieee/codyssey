@@ -1,0 +1,566 @@
+{
+  "checked_at_kst": "2026-10-27T04:10:35+09:00",
+  "source": "FinanceData/marcap (KRX-origin daily quotes)",
+  "commit": "9d890e304238340a9d40a08e680e276c8d80ceab",
+  "upstream_files": [
+    {
+      "year": 2022,
+      "url": "https://raw.githubusercontent.com/FinanceData/marcap/9d890e304238340a9d40a08e680e276c8d80ceab/data/marcap-2022.parquet",
+      "git_blob_sha": "60ee136c6309671fb112b32ff190f7b774c3fad8",
+      "sha256": "179650f5d1bd6abecb03d1b8eddf5f59c5ca6a0402e7bf2578635790b9ca811c"
+    },
+    {
+      "year": 2023,
+      "url": "https://raw.githubusercontent.com/FinanceData/marcap/9d890e304238340a9d40a08e680e276c8d80ceab/data/marcap-2023.parquet",
+      "git_blob_sha": "ecc188b0bad196701da3a0defded60c13b50ff43",
+      "sha256": "08f96990358f5afc4e17321613cef7126e2f0bd4290b82db952b7808d87f9c22"
+    },
+    {
+      "year": 2024,
+      "url": "https://raw.githubusercontent.com/FinanceData/marcap/9d890e304238340a9d40a08e680e276c8d80ceab/data/marcap-2024.parquet",
+      "git_blob_sha": "b69c5222d015c81f19f90f581faabe4dd1a919b4",
+      "sha256": "b0c38943e67637d5faf88429880092cf0f46a394be39860dd3bcd0b04231bccb"
+    },
+    {
+      "year": 2025,
+      "url": "https://raw.githubusercontent.com/FinanceData/marcap/9d890e304238340a9d40a08e680e276c8d80ceab/data/marcap-2025.parquet",
+      "git_blob_sha": "e817f0729b787fe03904982a37b1d84d26d70206",
+      "sha256": "2bfd93c217eb74263bc5020b23fa6debb6b02531c11eaccc2826639bc191559e"
+    },
+    {
+      "year": 2026,
+      "url": "https://raw.githubusercontent.com/FinanceData/marcap/9d890e304238340a9d40a08e680e276c8d80ceab/data/marcap-2026.parquet",
+      "git_blob_sha": "6b4bf92bcc83c6ba9a809da2eb73d112340e84f8",
+      "sha256": "21ecb56bbaf266a41bf6666da8e0fdd00a5541ea26a084ba39b2931085c420df"
+    }
+  ],
+  "series": [
+    {
+      "key": "samsung",
+      "code": "005930",
+      "compared_rows": 1038,
+      "naver_krx_mismatches": [
+        {
+          "Date": "2026-09-14",
+          "naver_close": 248500.0,
+          "krx_close": 249000.0
+        },
+        {
+          "Date": "2026-09-15",
+          "naver_close": 250500.0,
+          "krx_close": 248500.0
+        },
+        {
+          "Date": "2026-09-17",
+          "naver_close": 256000.0,
+          "krx_close": 252500.0
+        },
+        {
+          "Date": "2026-09-18",
+          "naver_close": 260000.0,
+          "krx_close": 261000.0
+        },
+        {
+          "Date": "2026-09-21",
+          "naver_close": 275000.0,
+          "krx_close": 274000.0
+        },
+        {
+          "Date": "2026-09-22",
+          "naver_close": 277500.0,
+          "krx_close": 276500.0
+        },
+        {
+          "Date": "2026-09-23",
+          "naver_close": 286500.0,
+          "krx_close": 285500.0
+        },
+        {
+          "Date": "2026-09-29",
+          "naver_close": 275000.0,
+          "krx_close": 272500.0
+        },
+        {
+          "Date": "2026-09-30",
+          "naver_close": 269500.0,
+          "krx_close": 268500.0
+        }
+      ],
+      "naver_only_dates": [],
+      "krx_only_dates": [],
+      "yahoo_discrepancy_resolution": [
+        {
+          "Date": "2023-01-25",
+          "naver_close": 63400.0,
+          "yahoo_close": 63300.0,
+          "difference": 100.0,
+          "krx_close": 63400.0,
+          "naver_matches_krx": true,
+          "yahoo_matches_krx": false
+        },
+        {
+          "Date": "2023-01-26",
+          "naver_close": 63900.0,
+          "yahoo_close": 63800.0,
+          "difference": 100.0,
+          "krx_close": 63900.0,
+          "naver_matches_krx": true,
+          "yahoo_matches_krx": false
+        },
+        {
+          "Date": "2023-01-31",
+          "naver_close": 61000.0,
+          "yahoo_close": 61400.0,
+          "difference": -400.0,
+          "krx_close": 61000.0,
+          "naver_matches_krx": true,
+          "yahoo_matches_krx": false
+        },
+        {
+          "Date": "2023-02-01",
+          "naver_close": 61800.0,
+          "yahoo_close": 61000.0,
+          "difference": 800.0,
+          "krx_close": 61800.0,
+          "naver_matches_krx": true,
+          "yahoo_matches_krx": false
+        },
+        {
+          "Date": "2023-02-03",
+          "naver_close": 63800.0,
+          "yahoo_close": 63500.0,
+          "difference": 300.0,
+          "krx_close": 63800.0,
+          "naver_matches_krx": true,
+          "yahoo_matches_krx": false
+        },
+        {
+          "Date": "2023-02-07",
+          "naver_close": 61900.0,
+          "yahoo_close": 62000.0,
+          "difference": -100.0,
+          "krx_close": 61900.0,
+          "naver_matches_krx": true,
+          "yahoo_matches_krx": false
+        },
+        {
+          "Date": "2023-02-09",
+          "naver_close": 63000.0,
+          "yahoo_close": 63300.0,
+          "difference": -300.0,
+          "krx_close": 63000.0,
+          "naver_matches_krx": true,
+          "yahoo_matches_krx": false
+        },
+        {
+          "Date": "2023-02-10",
+          "naver_close": 62800.0,
+          "yahoo_close": 62900.0,
+          "difference": -100.0,
+          "krx_close": 62800.0,
+          "naver_matches_krx": true,
+          "yahoo_matches_krx": false
+        },
+        {
+          "Date": "2024-02-15",
+          "naver_close": 73000.0,
+          "yahoo_close": 73200.0,
+          "difference": -200.0,
+          "krx_close": 73000.0,
+          "naver_matches_krx": true,
+          "yahoo_matches_krx": false
+        },
+        {
+          "Date": "2024-10-14",
+          "naver_close": 60800.0,
+          "yahoo_close": 59300.0,
+          "difference": 1500.0,
+          "krx_close": 60800.0,
+          "naver_matches_krx": true,
+          "yahoo_matches_krx": false
+        },
+        {
+          "Date": "2024-11-07",
+          "naver_close": 57500.0,
+          "yahoo_close": 57300.0,
+          "difference": 200.0,
+          "krx_close": 57500.0,
+          "naver_matches_krx": true,
+          "yahoo_matches_krx": false
+        },
+        {
+          "Date": "2025-09-18",
+          "naver_close": 80500.0,
+          "yahoo_close": 80300.0,
+          "difference": 200.0,
+          "krx_close": 80500.0,
+          "naver_matches_krx": true,
+          "yahoo_matches_krx": false
+        },
+        {
+          "Date": "2025-10-02",
+          "naver_close": 89000.0,
+          "yahoo_close": 89750.0,
+          "difference": -750.0,
+          "krx_close": 89000.0,
+          "naver_matches_krx": true,
+          "yahoo_matches_krx": false
+        },
+        {
+          "Date": "2026-03-27",
+          "naver_close": 179700.0,
+          "yahoo_close": 180100.0,
+          "difference": -400.0,
+          "krx_close": 179700.0,
+          "naver_matches_krx": true,
+          "yahoo_matches_krx": false
+        },
+        {
+          "Date": "2026-04-01",
+          "naver_close": 189600.0,
+          "yahoo_close": 189650.0,
+          "difference": -50.0,
+          "krx_close": 189600.0,
+          "naver_matches_krx": true,
+          "yahoo_matches_krx": false
+        },
+        {
+          "Date": "2026-09-14",
+          "naver_close": 248500.0,
+          "yahoo_close": 249000.0,
+          "difference": -500.0,
+          "krx_close": 249000.0,
+          "naver_matches_krx": false,
+          "yahoo_matches_krx": true
+        },
+        {
+          "Date": "2026-09-15",
+          "naver_close": 250500.0,
+          "yahoo_close": 248500.0,
+          "difference": 2000.0,
+          "krx_close": 248500.0,
+          "naver_matches_krx": false,
+          "yahoo_matches_krx": true
+        },
+        {
+          "Date": "2026-09-17",
+          "naver_close": 256000.0,
+          "yahoo_close": 252500.0,
+          "difference": 3500.0,
+          "krx_close": 252500.0,
+          "naver_matches_krx": false,
+          "yahoo_matches_krx": true
+        },
+        {
+          "Date": "2026-09-18",
+          "naver_close": 260000.0,
+          "yahoo_close": 261000.0,
+          "difference": -1000.0,
+          "krx_close": 261000.0,
+          "naver_matches_krx": false,
+          "yahoo_matches_krx": true
+        },
+        {
+          "Date": "2026-09-21",
+          "naver_close": 275000.0,
+          "yahoo_close": 274000.0,
+          "difference": 1000.0,
+          "krx_close": 274000.0,
+          "naver_matches_krx": false,
+          "yahoo_matches_krx": true
+        },
+        {
+          "Date": "2026-09-22",
+          "naver_close": 277500.0,
+          "yahoo_close": 276500.0,
+          "difference": 1000.0,
+          "krx_close": 276500.0,
+          "naver_matches_krx": false,
+          "yahoo_matches_krx": true
+        },
+        {
+          "Date": "2026-09-23",
+          "naver_close": 286500.0,
+          "yahoo_close": 285500.0,
+          "difference": 1000.0,
+          "krx_close": 285500.0,
+          "naver_matches_krx": false,
+          "yahoo_matches_krx": true
+        },
+        {
+          "Date": "2026-09-29",
+          "naver_close": 275000.0,
+          "yahoo_close": 272500.0,
+          "difference": 2500.0,
+          "krx_close": 272500.0,
+          "naver_matches_krx": false,
+          "yahoo_matches_krx": true
+        },
+        {
+          "Date": "2026-09-30",
+          "naver_close": 269500.0,
+          "yahoo_close": 268500.0,
+          "difference": 1000.0,
+          "krx_close": 268500.0,
+          "naver_matches_krx": false,
+          "yahoo_matches_krx": true
+        }
+      ]
+    },
+    {
+      "key": "sk_hynix",
+      "code": "000660",
+      "compared_rows": 1038,
+      "naver_krx_mismatches": [
+        {
+          "Date": "2026-09-14",
+          "naver_close": 1683000.0,
+          "krx_close": 1697000.0
+        },
+        {
+          "Date": "2026-09-15",
+          "naver_close": 1712000.0,
+          "krx_close": 1690000.0
+        },
+        {
+          "Date": "2026-09-16",
+          "naver_close": 1757000.0,
+          "krx_close": 1759000.0
+        },
+        {
+          "Date": "2026-09-17",
+          "naver_close": 1766000.0,
+          "krx_close": 1745000.0
+        },
+        {
+          "Date": "2026-09-18",
+          "naver_close": 1849000.0,
+          "krx_close": 1857000.0
+        },
+        {
+          "Date": "2026-09-21",
+          "naver_close": 1879000.0,
+          "krx_close": 1868000.0
+        },
+        {
+          "Date": "2026-09-22",
+          "naver_close": 1841000.0,
+          "krx_close": 1840000.0
+        },
+        {
+          "Date": "2026-09-23",
+          "naver_close": 1863000.0,
+          "krx_close": 1862000.0
+        },
+        {
+          "Date": "2026-09-28",
+          "naver_close": 1761000.0,
+          "krx_close": 1768000.0
+        },
+        {
+          "Date": "2026-09-29",
+          "naver_close": 1790000.0,
+          "krx_close": 1765000.0
+        },
+        {
+          "Date": "2026-09-30",
+          "naver_close": 1783000.0,
+          "krx_close": 1776000.0
+        }
+      ],
+      "naver_only_dates": [],
+      "krx_only_dates": [],
+      "yahoo_discrepancy_resolution": [
+        {
+          "Date": "2023-01-26",
+          "naver_close": 92300.0,
+          "yahoo_close": 91400.0,
+          "difference": 900.0,
+          "krx_close": 92300.0,
+          "naver_matches_krx": true,
+          "yahoo_matches_krx": false
+        },
+        {
+          "Date": "2023-02-02",
+          "naver_close": 93400.0,
+          "yahoo_close": 91400.0,
+          "difference": 2000.0,
+          "krx_close": 93400.0,
+          "naver_matches_krx": true,
+          "yahoo_matches_krx": false
+        },
+        {
+          "Date": "2023-02-09",
+          "naver_close": 94400.0,
+          "yahoo_close": 94900.0,
+          "difference": -500.0,
+          "krx_close": 94400.0,
+          "naver_matches_krx": true,
+          "yahoo_matches_krx": false
+        },
+        {
+          "Date": "2024-02-15",
+          "naver_close": 148700.0,
+          "yahoo_close": 148900.0,
+          "difference": -200.0,
+          "krx_close": 148700.0,
+          "naver_matches_krx": true,
+          "yahoo_matches_krx": false
+        },
+        {
+          "Date": "2024-10-14",
+          "naver_close": 187500.0,
+          "yahoo_close": 186000.0,
+          "difference": 1500.0,
+          "krx_close": 187500.0,
+          "naver_matches_krx": true,
+          "yahoo_matches_krx": false
+        },
+        {
+          "Date": "2024-11-07",
+          "naver_close": 197400.0,
+          "yahoo_close": 195800.0,
+          "difference": 1600.0,
+          "krx_close": 197400.0,
+          "naver_matches_krx": true,
+          "yahoo_matches_krx": false
+        },
+        {
+          "Date": "2025-09-18",
+          "naver_close": 353000.0,
+          "yahoo_close": 355500.0,
+          "difference": -2500.0,
+          "krx_close": 353000.0,
+          "naver_matches_krx": true,
+          "yahoo_matches_krx": false
+        },
+        {
+          "Date": "2026-03-27",
+          "naver_close": 922000.0,
+          "yahoo_close": 933000.0,
+          "difference": -11000.0,
+          "krx_close": 922000.0,
+          "naver_matches_krx": true,
+          "yahoo_matches_krx": false
+        },
+        {
+          "Date": "2026-04-01",
+          "naver_close": 893000.0,
+          "yahoo_close": 897000.0,
+          "difference": -4000.0,
+          "krx_close": 893000.0,
+          "naver_matches_krx": true,
+          "yahoo_matches_krx": false
+        },
+        {
+          "Date": "2026-06-24",
+          "naver_close": 2580000.0,
+          "yahoo_close": 2621000.0,
+          "difference": -41000.0,
+          "krx_close": 2580000.0,
+          "naver_matches_krx": true,
+          "yahoo_matches_krx": false
+        },
+        {
+          "Date": "2026-09-14",
+          "naver_close": 1683000.0,
+          "yahoo_close": 1697000.0,
+          "difference": -14000.0,
+          "krx_close": 1697000.0,
+          "naver_matches_krx": false,
+          "yahoo_matches_krx": true
+        },
+        {
+          "Date": "2026-09-15",
+          "naver_close": 1712000.0,
+          "yahoo_close": 1690000.0,
+          "difference": 22000.0,
+          "krx_close": 1690000.0,
+          "naver_matches_krx": false,
+          "yahoo_matches_krx": true
+        },
+        {
+          "Date": "2026-09-16",
+          "naver_close": 1757000.0,
+          "yahoo_close": 1759000.0,
+          "difference": -2000.0,
+          "krx_close": 1759000.0,
+          "naver_matches_krx": false,
+          "yahoo_matches_krx": true
+        },
+        {
+          "Date": "2026-09-17",
+          "naver_close": 1766000.0,
+          "yahoo_close": 1745000.0,
+          "difference": 21000.0,
+          "krx_close": 1745000.0,
+          "naver_matches_krx": false,
+          "yahoo_matches_krx": true
+        },
+        {
+          "Date": "2026-09-18",
+          "naver_close": 1849000.0,
+          "yahoo_close": 1857000.0,
+          "difference": -8000.0,
+          "krx_close": 1857000.0,
+          "naver_matches_krx": false,
+          "yahoo_matches_krx": true
+        },
+        {
+          "Date": "2026-09-21",
+          "naver_close": 1879000.0,
+          "yahoo_close": 1868000.0,
+          "difference": 11000.0,
+          "krx_close": 1868000.0,
+          "naver_matches_krx": false,
+          "yahoo_matches_krx": true
+        },
+        {
+          "Date": "2026-09-22",
+          "naver_close": 1841000.0,
+          "yahoo_close": 1840000.0,
+          "difference": 1000.0,
+          "krx_close": 1840000.0,
+          "naver_matches_krx": false,
+          "yahoo_matches_krx": true
+        },
+        {
+          "Date": "2026-09-23",
+          "naver_close": 1863000.0,
+          "yahoo_close": 1862000.0,
+          "difference": 1000.0,
+          "krx_close": 1862000.0,
+          "naver_matches_krx": false,
+          "yahoo_matches_krx": true
+        },
+        {
+          "Date": "2026-09-28",
+          "naver_close": 1761000.0,
+          "yahoo_close": 1768000.0,
+          "difference": -7000.0,
+          "krx_close": 1768000.0,
+          "naver_matches_krx": false,
+          "yahoo_matches_krx": true
+        },
+        {
+          "Date": "2026-09-29",
+          "naver_close": 1790000.0,
+          "yahoo_close": 1765000.0,
+          "difference": 25000.0,
+          "krx_close": 1765000.0,
+          "naver_matches_krx": false,
+          "yahoo_matches_krx": true
+        },
+        {
+          "Date": "2026-09-30",
+          "naver_close": 1783000.0,
+          "yahoo_close": 1776000.0,
+          "difference": 7000.0,
+          "krx_close": 1776000.0,
+          "naver_matches_krx": false,
+          "yahoo_matches_krx": true
+        }
+      ]
+    }
+  ]
+}

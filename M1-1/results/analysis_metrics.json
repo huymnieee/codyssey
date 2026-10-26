@@ -1,0 +1,147 @@
+{
+  "analysis_start": "2023-01-02",
+  "analysis_end": "2026-09-30",
+  "analysis_rows": 913,
+  "preparation_rows": 125,
+  "stock_source_commit": "9d890e304238340a9d40a08e680e276c8d80ceab",
+  "price_basis": "KRX-origin Close for stocks; NAVER KOSPI Close. No dividend reinvestment.",
+  "period_return_baseline": "First analysis trading day close (2023-01-02)",
+  "annual_return_baseline": "Previous year's final trading day close; 2026 ends September 30",
+  "daily_return_basis": "Each trading day's close versus the previous trading day's close; preparation data included for January 2",
+  "metrics": [
+    {
+      "series": "samsung",
+      "name": "삼성전자",
+      "first_close": 55500.0,
+      "last_close": 268500.0,
+      "price_return_pct": 383.78378378378375,
+      "last_indexed_value": 483.78378378378375,
+      "max_drawdown_pct": -43.16628701594533,
+      "drawdown_peak_date": "2024-07-09",
+      "drawdown_trough_date": "2024-11-14",
+      "annualized_daily_volatility_pct": 46.29323056335195
+    },
+    {
+      "series": "sk_hynix",
+      "name": "SK하이닉스",
+      "first_close": 75700.0,
+      "last_close": 1776000.0,
+      "price_return_pct": 2246.1030383091147,
+      "last_indexed_value": 2346.1030383091147,
+      "max_drawdown_pct": -54.71051730044536,
+      "drawdown_peak_date": "2026-06-22",
+      "drawdown_trough_date": "2026-07-30",
+      "annualized_daily_volatility_pct": 61.06950278558724
+    },
+    {
+      "series": "kospi",
+      "name": "코스피",
+      "first_close": 2225.67,
+      "last_close": 6838.04,
+      "price_return_pct": 207.2351247040217,
+      "last_indexed_value": 307.2351247040217,
+      "max_drawdown_pct": -38.630431562721135,
+      "drawdown_peak_date": "2026-06-22",
+      "drawdown_trough_date": "2026-07-30",
+      "annualized_daily_volatility_pct": 32.17710285257167
+    }
+  ],
+  "annual_returns": [
+    {
+      "series": "samsung",
+      "year": 2023,
+      "period": "2023",
+      "baseline_close": 55300.0,
+      "last_close": 78500.0,
+      "price_return_pct": 41.95298372513563
+    },
+    {
+      "series": "samsung",
+      "year": 2024,
+      "period": "2024",
+      "baseline_close": 78500.0,
+      "last_close": 53200.0,
+      "price_return_pct": -32.22929936305733
+    },
+    {
+      "series": "samsung",
+      "year": 2025,
+      "period": "2025",
+      "baseline_close": 53200.0,
+      "last_close": 119900.0,
+      "price_return_pct": 125.37593984962405
+    },
+    {
+      "series": "samsung",
+      "year": 2026,
+      "period": "2026-01~09",
+      "baseline_close": 119900.0,
+      "last_close": 268500.0,
+      "price_return_pct": 123.93661384487072
+    },
+    {
+      "series": "sk_hynix",
+      "year": 2023,
+      "period": "2023",
+      "baseline_close": 75000.0,
+      "last_close": 141500.0,
+      "price_return_pct": 88.66666666666667
+    },
+    {
+      "series": "sk_hynix",
+      "year": 2024,
+      "period": "2024",
+      "baseline_close": 141500.0,
+      "last_close": 173900.0,
+      "price_return_pct": 22.897526501766773
+    },
+    {
+      "series": "sk_hynix",
+      "year": 2025,
+      "period": "2025",
+      "baseline_close": 173900.0,
+      "last_close": 651000.0,
+      "price_return_pct": 274.35307648073604
+    },
+    {
+      "series": "sk_hynix",
+      "year": 2026,
+      "period": "2026-01~09",
+      "baseline_close": 651000.0,
+      "last_close": 1776000.0,
+      "price_return_pct": 172.8110599078341
+    },
+    {
+      "series": "kospi",
+      "year": 2023,
+      "period": "2023",
+      "baseline_close": 2236.4,
+      "last_close": 2655.28,
+      "price_return_pct": 18.730101949561796
+    },
+    {
+      "series": "kospi",
+      "year": 2024,
+      "period": "2024",
+      "baseline_close": 2655.28,
+      "last_close": 2399.49,
+      "price_return_pct": -9.63325901599833
+    },
+    {
+      "series": "kospi",
+      "year": 2025,
+      "period": "2025",
+      "baseline_close": 2399.49,
+      "last_close": 4214.17,
+      "price_return_pct": 75.62773756089838
+    },
+    {
+      "series": "kospi",
+      "year": 2026,
+      "period": "2026-01~09",
+      "baseline_close": 4214.17,
+      "last_close": 6838.04,
+      "price_return_pct": 62.26303162900404
+    }
+  ]
+}

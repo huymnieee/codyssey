@@ -1,0 +1,358 @@
+{
+  "checked_at_kst": "2026-10-27T04:11:16+09:00",
+  "calendar": {
+    "provider": "exchange_calendars",
+    "version": "4.13.2",
+    "calendar": "XKRX",
+    "start": "2022-07-01",
+    "end": "2026-09-30",
+    "base_calendar_sessions": 1040,
+    "notice_confirmed_closures": [
+      {
+        "date": "2026-06-03",
+        "reason": "지방선거일 휴장",
+        "sources": [
+          "https://strn.krx.co.kr/corebbs5/BHPSTRN0401/list",
+          "https://invest.kiwoom.com/inv/calendar?date=20260628"
+        ]
+      },
+      {
+        "date": "2026-07-17",
+        "reason": "제헌절 휴장",
+        "sources": [
+          "https://strn.krx.co.kr/corebbs5/BHPSTRN0401/list",
+          "https://securities.miraeasset.com/bbs/board/message/view.do?categoryId=1539&messageId=2340801"
+        ]
+      }
+    ],
+    "source": "https://github.com/gerrymanoim/exchange_calendars"
+  },
+  "expected_sessions": 1038,
+  "series": [
+    {
+      "name": "삼성전자",
+      "key": "samsung",
+      "symbol": "005930.KS",
+      "compared_rows": 1037,
+      "max_absolute_difference": 3500.0,
+      "tolerance": 0.5,
+      "price_mismatches": [
+        {
+          "Date": "2023-01-25",
+          "naver_close": 63400.0,
+          "yahoo_close": 63300.0,
+          "difference": 100.0
+        },
+        {
+          "Date": "2023-01-26",
+          "naver_close": 63900.0,
+          "yahoo_close": 63800.0,
+          "difference": 100.0
+        },
+        {
+          "Date": "2023-01-31",
+          "naver_close": 61000.0,
+          "yahoo_close": 61400.0,
+          "difference": -400.0
+        },
+        {
+          "Date": "2023-02-01",
+          "naver_close": 61800.0,
+          "yahoo_close": 61000.0,
+          "difference": 800.0
+        },
+        {
+          "Date": "2023-02-03",
+          "naver_close": 63800.0,
+          "yahoo_close": 63500.0,
+          "difference": 300.0
+        },
+        {
+          "Date": "2023-02-07",
+          "naver_close": 61900.0,
+          "yahoo_close": 62000.0,
+          "difference": -100.0
+        },
+        {
+          "Date": "2023-02-09",
+          "naver_close": 63000.0,
+          "yahoo_close": 63300.0,
+          "difference": -300.0
+        },
+        {
+          "Date": "2023-02-10",
+          "naver_close": 62800.0,
+          "yahoo_close": 62900.0,
+          "difference": -100.0
+        },
+        {
+          "Date": "2024-02-15",
+          "naver_close": 73000.0,
+          "yahoo_close": 73200.0,
+          "difference": -200.0
+        },
+        {
+          "Date": "2024-10-14",
+          "naver_close": 60800.0,
+          "yahoo_close": 59300.0,
+          "difference": 1500.0
+        },
+        {
+          "Date": "2024-11-07",
+          "naver_close": 57500.0,
+          "yahoo_close": 57300.0,
+          "difference": 200.0
+        },
+        {
+          "Date": "2025-09-18",
+          "naver_close": 80500.0,
+          "yahoo_close": 80300.0,
+          "difference": 200.0
+        },
+        {
+          "Date": "2025-10-02",
+          "naver_close": 89000.0,
+          "yahoo_close": 89750.0,
+          "difference": -750.0
+        },
+        {
+          "Date": "2026-03-27",
+          "naver_close": 179700.0,
+          "yahoo_close": 180100.0,
+          "difference": -400.0
+        },
+        {
+          "Date": "2026-04-01",
+          "naver_close": 189600.0,
+          "yahoo_close": 189650.0,
+          "difference": -50.0
+        },
+        {
+          "Date": "2026-09-14",
+          "naver_close": 248500.0,
+          "yahoo_close": 249000.0,
+          "difference": -500.0
+        },
+        {
+          "Date": "2026-09-15",
+          "naver_close": 250500.0,
+          "yahoo_close": 248500.0,
+          "difference": 2000.0
+        },
+        {
+          "Date": "2026-09-17",
+          "naver_close": 256000.0,
+          "yahoo_close": 252500.0,
+          "difference": 3500.0
+        },
+        {
+          "Date": "2026-09-18",
+          "naver_close": 260000.0,
+          "yahoo_close": 261000.0,
+          "difference": -1000.0
+        },
+        {
+          "Date": "2026-09-21",
+          "naver_close": 275000.0,
+          "yahoo_close": 274000.0,
+          "difference": 1000.0
+        },
+        {
+          "Date": "2026-09-22",
+          "naver_close": 277500.0,
+          "yahoo_close": 276500.0,
+          "difference": 1000.0
+        },
+        {
+          "Date": "2026-09-23",
+          "naver_close": 286500.0,
+          "yahoo_close": 285500.0,
+          "difference": 1000.0
+        },
+        {
+          "Date": "2026-09-29",
+          "naver_close": 275000.0,
+          "yahoo_close": 272500.0,
+          "difference": 2500.0
+        },
+        {
+          "Date": "2026-09-30",
+          "naver_close": 269500.0,
+          "yahoo_close": 268500.0,
+          "difference": 1000.0
+        }
+      ],
+      "naver_only_dates": [
+        "2025-09-19"
+      ],
+      "yahoo_only_dates": [],
+      "missing_vs_calendar": [],
+      "extra_vs_calendar": [],
+      "reported_splits_in_period": [],
+      "source_snapshot": "data/reference/yahoo_samsung.json",
+      "source_receipt": "data/reference/yahoo_samsung_receipt.json"
+    },
+    {
+      "name": "SK하이닉스",
+      "key": "sk_hynix",
+      "symbol": "000660.KS",
+      "compared_rows": 1037,
+      "max_absolute_difference": 41000.0,
+      "tolerance": 0.5,
+      "price_mismatches": [
+        {
+          "Date": "2023-01-26",
+          "naver_close": 92300.0,
+          "yahoo_close": 91400.0,
+          "difference": 900.0
+        },
+        {
+          "Date": "2023-02-02",
+          "naver_close": 93400.0,
+          "yahoo_close": 91400.0,
+          "difference": 2000.0
+        },
+        {
+          "Date": "2023-02-09",
+          "naver_close": 94400.0,
+          "yahoo_close": 94900.0,
+          "difference": -500.0
+        },
+        {
+          "Date": "2024-02-15",
+          "naver_close": 148700.0,
+          "yahoo_close": 148900.0,
+          "difference": -200.0
+        },
+        {
+          "Date": "2024-10-14",
+          "naver_close": 187500.0,
+          "yahoo_close": 186000.0,
+          "difference": 1500.0
+        },
+        {
+          "Date": "2024-11-07",
+          "naver_close": 197400.0,
+          "yahoo_close": 195800.0,
+          "difference": 1600.0
+        },
+        {
+          "Date": "2025-09-18",
+          "naver_close": 353000.0,
+          "yahoo_close": 355500.0,
+          "difference": -2500.0
+        },
+        {
+          "Date": "2026-03-27",
+          "naver_close": 922000.0,
+          "yahoo_close": 933000.0,
+          "difference": -11000.0
+        },
+        {
+          "Date": "2026-04-01",
+          "naver_close": 893000.0,
+          "yahoo_close": 897000.0,
+          "difference": -4000.0
+        },
+        {
+          "Date": "2026-06-24",
+          "naver_close": 2580000.0,
+          "yahoo_close": 2621000.0,
+          "difference": -41000.0
+        },
+        {
+          "Date": "2026-09-14",
+          "naver_close": 1683000.0,
+          "yahoo_close": 1697000.0,
+          "difference": -14000.0
+        },
+        {
+          "Date": "2026-09-15",
+          "naver_close": 1712000.0,
+          "yahoo_close": 1690000.0,
+          "difference": 22000.0
+        },
+        {
+          "Date": "2026-09-16",
+          "naver_close": 1757000.0,
+          "yahoo_close": 1759000.0,
+          "difference": -2000.0
+        },
+        {
+          "Date": "2026-09-17",
+          "naver_close": 1766000.0,
+          "yahoo_close": 1745000.0,
+          "difference": 21000.0
+        },
+        {
+          "Date": "2026-09-18",
+          "naver_close": 1849000.0,
+          "yahoo_close": 1857000.0,
+          "difference": -8000.0
+        },
+        {
+          "Date": "2026-09-21",
+          "naver_close": 1879000.0,
+          "yahoo_close": 1868000.0,
+          "difference": 11000.0
+        },
+        {
+          "Date": "2026-09-22",
+          "naver_close": 1841000.0,
+          "yahoo_close": 1840000.0,
+          "difference": 1000.0
+        },
+        {
+          "Date": "2026-09-23",
+          "naver_close": 1863000.0,
+          "yahoo_close": 1862000.0,
+          "difference": 1000.0
+        },
+        {
+          "Date": "2026-09-28",
+          "naver_close": 1761000.0,
+          "yahoo_close": 1768000.0,
+          "difference": -7000.0
+        },
+        {
+          "Date": "2026-09-29",
+          "naver_close": 1790000.0,
+          "yahoo_close": 1765000.0,
+          "difference": 25000.0
+        },
+        {
+          "Date": "2026-09-30",
+          "naver_close": 1783000.0,
+          "yahoo_close": 1776000.0,
+          "difference": 7000.0
+        }
+      ],
+      "naver_only_dates": [
+        "2025-09-19"
+      ],
+      "yahoo_only_dates": [],
+      "missing_vs_calendar": [],
+      "extra_vs_calendar": [],
+      "reported_splits_in_period": [],
+      "source_snapshot": "data/reference/yahoo_sk_hynix.json",
+      "source_receipt": "data/reference/yahoo_sk_hynix_receipt.json"
+    },
+    {
+      "name": "코스피",
+      "key": "kospi",
+      "symbol": "^KS11",
+      "compared_rows": 1038,
+      "max_absolute_difference": 0.00046875000043655746,
+      "tolerance": 0.02,
+      "price_mismatches": [],
+      "naver_only_dates": [],
+      "yahoo_only_dates": [],
+      "missing_vs_calendar": [],
+      "extra_vs_calendar": [],
+      "reported_splits_in_period": [],
+      "source_snapshot": "data/reference/yahoo_kospi.json",
+      "source_receipt": "data/reference/yahoo_kospi_receipt.json"
+    }
+  ],
+  "price_basis": "NAVER supplied Close compared with Yahoo Close, not Adj Close. Dividend reinvestment is excluded. Agreement supports the price series used here but does not establish the provider's adjustment rules for every corporate action."
+}

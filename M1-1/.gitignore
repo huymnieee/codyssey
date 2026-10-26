@@ -1,0 +1,12 @@
+.venv/
+.cache/
+__pycache__/
+*.pyc
+.DS_Store
+outputs/
+data/raw/
+data/source/
+data/processed/
+data/reference/yahoo_*.json
+data/reference/krx_selected_close.json
+results/indexed_prices.csv
